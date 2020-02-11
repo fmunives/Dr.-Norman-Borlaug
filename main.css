@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #ccc;
+  --secondary-color: blueviolet;
+  --text-color-primary: rgb(41, 40, 40);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Blinker', sans-serif;
+  text-align: center;
+  background-color: var(--primary-color);
+  margin: 0;
+}
+
+p,
+li,
+blockquote {
+  font-size: 0.9em;
+  color: var(--text-color-primary);
+}
+
+h3 {
+  font-size: 1em;
+}
+
+header h1 {
+  color: var(--secondary-color);
+}
+
+.list-info li {
+  text-align: left;
+  padding: 0.7em;
+  list-style: none;
+  /* text-indent: 10px; */
+}
+
+.list-info li i {
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+
+.reference {
+  text-align: left;
+  font-style: italic;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.no-container {
+  background: white;
+  width: 100%;
+  padding: 0.2em 0;
+}
+
+.no-container p {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .image-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p,
+  li,
+  blockquote {
+    font-size: 1em;
+  }
+}
